@@ -1,1 +1,11 @@
-/*# sourceMappingURL=main.css.map */
+h1, h2, h3 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  margin-bottom: 20px;
+}/*# sourceMappingURL=main.css.map */
