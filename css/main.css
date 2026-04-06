@@ -133,6 +133,7 @@ section {
 .logo-mobile {
   display: block;
   height: auto;
+  width: 100px;
 }
 
 #book-now {
@@ -142,6 +143,7 @@ section {
 
 #book-now-mobile {
   display: block;
+  margin-right: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -193,5 +195,66 @@ section {
   .book-btn {
     font-size: 20px;
     padding: 8px 20px;
+  }
+}
+.hero-section {
+  background-color: #000000;
+  padding: 40px 0;
+}
+
+.hero-row {
+  align-items: center;
+}
+
+.hero-logo-box {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-logo {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+.hero-text-box {
+  text-align: center;
+}
+
+.hero-text {
+  color: #FF2D8F;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.hero-book-btn {
+  background-color: #FF2D8F;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 28px;
+  font-size: 28px;
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+}
+
+.hero-book-btn:hover {
+  background-color: #cc2471;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero-logo-box {
+    margin-bottom: 0;
+  }
+  .hero-text-box {
+    text-align: left;
+  }
+  .hero-text {
+    font-size: 22px;
+  }
+  .hero-book-btn {
+    font-size: 24px;
+    padding: 10px 24px;
   }
 }/*# sourceMappingURL=main.css.map */
