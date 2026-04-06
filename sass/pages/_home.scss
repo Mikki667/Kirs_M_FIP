@@ -1,0 +1,70 @@
+@use '../abstracts/variables' as *;
+
+.hero-section {
+    background-color: $background-color;
+     padding: $space-lg 0;
+}
+
+.hero-row {
+    align-items: center;
+}
+
+.hero-logo-box {
+    text-align: center;
+    margin-bottom: $space-lg;
+}
+
+.hero-logo {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+.hero-text-box {
+    text-align: center;
+}
+
+.hero-text {
+    color: $primary-color;
+    font-size: 24px;
+    margin-bottom: $space-lg;
+    font-family: $font-main;
+}
+
+.hero-book-btn {
+    background-color: $primary-color;
+    color: $text-color;
+    border: none;
+    border-radius: $radius;
+    padding: 12px 28px;
+    font-size: 28px;
+    font-family: $font-heading;
+    cursor: pointer;
+}
+
+.hero-book-btn:hover {
+  background-color: $primary-hover;
+}
+
+// tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .hero-logo-box {
+        margin-bottom: 0;
+    }
+
+    .hero-text-box {
+        text-align: left;
+    }
+
+    .hero-text {
+        font-size: 22px;
+    }
+
+    .hero-book-btn {
+        font-size: 24px;
+        padding: 10px 24px;
+    }
+
+}

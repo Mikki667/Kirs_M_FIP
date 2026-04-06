@@ -118,7 +118,8 @@
 
 .logo-mobile {
   display: block;
-  height: auto
+  height: auto;
+  width: 100px;
 }
 
 #book-now {
@@ -128,6 +129,7 @@
 
 #book-now-mobile {
   display: block;
+  margin-right: 40px;
 }
 
 @media screen and (min-width: 768px) {
