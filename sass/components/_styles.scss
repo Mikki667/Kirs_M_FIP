@@ -1,0 +1,99 @@
+@use '../abstracts/variables' as *;
+
+.styles-section {
+    background-color: $background-color;
+}
+
+.styles-title {
+    color: $text-color;
+    font-size: 64px;
+    font-family: $font-heading;
+    margin-top: $space-lg;
+    margin-bottom: $space-md;
+}
+
+.styles-image-box {
+    margin-bottom: $space-md;
+}
+
+.styles-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.styles-img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+}
+
+.styles-text-box {
+    margin-top: $space-md;
+}
+
+.styles-text {
+    color: $text-color;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: $space-md;
+    font-family: $font-main;
+}
+
+.styles-subtitle {
+    color: $text-color;
+    font-size: 40px;
+    font-family: $font-heading;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .styles-text-box {
+        margin-top: 0;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .styles-title {
+        font-size: 48px;
+    }
+
+    .styles-subtitle {
+        font-size: 32px;
+    }
+
+    .styles-text {
+        font-size: 18px;
+    }
+
+    .styles-img {
+        max-width: 380px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .styles-title {
+        font-size: 36px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .styles-subtitle {
+        font-size: 26px;
+    }
+
+    .styles-text {
+        font-size: 16px;
+    }
+    
+    .styles-img {
+        max-width: 100%; 
+        margin-left: 0;
+    }
+}
