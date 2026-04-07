@@ -1,0 +1,55 @@
+@use '../abstracts/variables' as *;
+
+.about-title {
+    color: $text-color;
+    font-size: 64px;
+    font-family: $font-heading;
+    margin-top: $space-lg;  
+    margin-bottom: $space-md;
+}
+
+.about-section {
+    background-color: $background-color;
+}
+
+.about-image-box {
+    margin-bottom: $space-md;
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about-text-box {
+    margin-top: $space-md;
+}
+
+.about-text {
+    color: $text-color;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: $space-md;
+}
+
+// tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .about-title {
+        font-size: 48px;
+    }
+}
+
+// mobile
+
+@media screen and (max-width: 767px) {
+
+    .about-title {
+        font-size: 36px;   
+        margin-top: 50px;  
+        text-align: left; 
+    }
+
+}
