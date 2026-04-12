@@ -502,4 +502,135 @@ section {
     display: inline-block;
     margin-bottom: 12px;
   }
+}
+.footer {
+  background-color: #FF2D8F;
+  padding: 40px 0;
+  margin-top: 40px;
+}
+
+.footer-logo-box,
+.footer-links,
+.footer-info,
+.footer-contact {
+  margin-bottom: 40px;
+}
+
+.footer-logo-box {
+  text-align: center;
+}
+
+.footer-logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+}
+
+.footer-book-btn {
+  display: inline-block;
+  background-color: #000000;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+}
+
+.footer-links a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin: 0 0 20px 30px;
+}
+
+.footer-links a:hover {
+  opacity: 0.7;
+}
+
+.footer-info p {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.footer-address,
+.footer-number,
+.footer-email {
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  width: 56px;
+  height: 56px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-logo {
+    width: 160px;
+  }
+  .footer-book-btn {
+    font-size: 20px;
+    padding: 12px 30px;
+  }
+  .footer-links a {
+    font-size: 22px;
+    margin-left: 20px;
+  }
+  .footer-info p {
+    font-size: 22px;
+  }
+  .footer-address,
+  .footer-number,
+  .footer-email {
+    font-size: 16px;
+  }
+  .footer-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    text-align: center;
+  }
+  .footer-logo {
+    width: 200px;
+  }
+  .footer-book-btn {
+    font-size: 28px;
+    padding: 10px 24px;
+  }
+  .footer-links a {
+    font-size: 20px;
+    margin: 0 0 12px 0;
+  }
+  .footer-info p {
+    font-size: 20px;
+  }
+  .footer-address,
+  .footer-number,
+  .footer-email {
+    font-size: 20px;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+  .footer-icon {
+    width: 56px;
+    height: 56px;
+  }
 }/*# sourceMappingURL=main.css.map */
