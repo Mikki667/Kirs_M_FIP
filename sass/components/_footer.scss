@@ -1,0 +1,155 @@
+@use '../abstracts/variables' as *;
+
+.footer {
+    background-color: $primary-color;
+    padding: $space-lg 0;
+    margin-top: $space-lg;
+}
+
+.footer-logo-box,
+.footer-links,
+.footer-info,
+.footer-contact {
+    margin-bottom: $space-lg;
+}
+
+.footer-logo-box {
+    text-align: center;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin: 0 auto $space-md auto;
+}
+
+.footer-book-btn {
+    display: inline-block;
+    background-color: $background-color;
+    color: $text-color;
+    text-decoration: none;
+    padding: 15px $space-lg;
+    border-radius: $radius;
+    font-family: $font-main;
+    font-size: 24px;
+}
+
+.footer-links a {
+    display: block;
+    text-decoration: none;
+    color: $text-color;
+    font-family: $font-main;
+    font-size: 26px;
+    margin: 0 0 $space-md 30px;
+}
+
+.footer-links a:hover {
+    opacity: 0.7;
+}
+
+.footer-info p {
+    color: $text-color;
+    font-family: $font-main;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.footer-address,
+.footer-number,
+.footer-email {
+    color: $text-color;
+    font-family: $font-main;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+
+.footer-socials {
+    display: flex;
+    gap: $space-md;
+    margin-bottom: $space-md;
+}
+
+.footer-icon {
+    width: 56px;
+    height: 56px;
+}
+
+//tablet
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .footer-logo {
+        width: 160px;
+    }
+
+    .footer-book-btn {
+        font-size: 20px;
+        padding: 12px 30px;
+    }
+
+    .footer-links a {
+        font-size: 22px;
+        margin-left: $space-md;
+    }
+
+    .footer-info p {
+        font-size: 22px;
+    }
+
+    .footer-address,
+    .footer-number,
+    .footer-email {
+        font-size: 16px;
+    }
+
+    .footer-icon {
+        width: 44px;
+        height: 44px;
+    }
+
+}
+
+//mobile
+
+@media screen and (max-width: 767px) {
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer-logo {
+        width: 200px;
+    }
+
+    .footer-book-btn {
+        font-size: 28px;
+        padding: 10px 24px;
+    }
+
+    .footer-links a {
+        font-size: 20px;
+        margin: 0 0 12px 0; 
+    }
+
+    .footer-info p {
+        font-size: 20px;
+    }
+
+    .footer-address,
+    .footer-number,
+    .footer-email {
+        font-size: 20px;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+
+    .footer-icon {
+        width: 56px;
+        height: 56px;
+    }
+
+}
