@@ -1,0 +1,70 @@
+@use '../abstracts/variables' as *;
+
+.studio-section {
+    background-color: $background-color;
+}
+
+.studio-title {
+    color: $text-color;
+    font-size: 64px;
+    font-family: $font-heading;
+    margin-top: $space-lg;
+    margin-bottom: $space-md;
+}
+
+.studio-image-box {
+    margin-bottom: $space-md;
+}
+
+.studio-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.studio-text {
+    color: $text-color;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: $space-md;
+    font-family: $font-main;
+}
+
+.studio-poster {
+    width: 100%;
+}
+
+.studio-poster-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .studio-title {
+        font-size: 48px;
+    }
+
+    .studio-text {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .studio-title {
+        font-size: 36px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .studio-text {
+        font-size: 16px;
+    }
+  
+}
