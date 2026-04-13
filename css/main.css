@@ -711,4 +711,119 @@ section {
   .flash-poster-mobile {
     display: block;
   }
+}
+.video-section {
+  background-color: #000000;
+}
+
+#player-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-controls.hidden {
+  display: none;
+}
+
+.video-controls {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 20px;
+  background-image: linear-gradient(to bottom, rgba(255, 45, 143, 0.2), rgba(255, 45, 143, 0.6));
+  display: flex;
+  transition: all 0.2s ease-in-out;
+}
+
+.video-controls.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.video-section button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.fa,
+.fa-solid {
+  color: #FFFFFF;
+  font-size: 28px;
+  margin-left: 20px;
+}
+
+.fa-volume-up {
+  margin-left: auto;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 400px;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  background-color: #FF2D8F;
+  border-radius: 8px;
+  height: 8px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-top: -4px;
+  background-color: #cc2471;
+  border-radius: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+input[type=range]:focus::-webkit-slider-thumb {
+  outline: 3px solid #cc2471;
+  outline-offset: 2px;
+}
+
+input[type=range]::-moz-range-track {
+  background-color: #FF2D8F;
+  border-radius: 8px;
+  height: 8px;
+}
+
+input[type=range]::-moz-range-thumb {
+  background-color: #cc2471;
+  border: none;
+  border-radius: 8px;
+  height: 16px;
+  width: 16px;
+}
+
+input[type=range]:focus::-moz-range-thumb {
+  outline: 3px solid #cc2471;
+  outline-offset: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .video-section input[type=range] {
+    width: 80px;
+    margin-left: 8px;
+  }
+  .video-section .fa-volume-up {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .video-controls {
+    gap: 8px;
+    align-items: center;
+  }
 }/*# sourceMappingURL=main.css.map */
