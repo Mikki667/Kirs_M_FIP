@@ -74,7 +74,51 @@
         </div>
     </section>
 
+    <section class="portfolio-section" id="grisha">
+        <h2 class="hidden">portfolio section</h2>
+        <div class="grid-con">
+
+            <div class="col-span-full">
+                <hr class="line-separator">
+            </div>
+
+            <div class="col-span-full">
+                <h2 class="portfolio-title">Grisha Dubinsky</h2>
+            </div>
+
+            <div class="col-span-full">
+                <hr class="line-separator">
+            </div>
+
+            <div class="portfolio-hero col-span-full grid-con">
+
+                <div class="col-span-full m-col-span-6 l-col-span-6 portfolio-image-box">
+                    <img src="images/experimental.JPG" alt="portfolio-hero" class="portfolio-hero-img">
+                </div>
+
+                <div class="col-span-full m-col-span-6 l-col-span-6 portfolio-text-box">
+                    <p class="portfolio-text">
+                        Grisha Dubinsky is a tattoo artist from Moscow, Russia. He went through a difficult journey,
+                        getting his first
+                        tattoo on his face when he was 16 years old and as a result being kicked out of school. In the
+                        moment of desperation, not knowing where to go, he found himself in the creative field of the
+                        tattoo industry. He is a master with 5 years experience and he specialises on experimental
+                        designs and color. He represents spirituality, deep understanding of people and the difficulties
+                        they are going through. He relates to others and that is the reason why he can serve a great
+                        help of choosing and creating the design you really want.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-span-full">
+                <hr class="line-separator">
+            </div>
+        </div>
+    </section>
+
     <section class="tattoo-gallery-section" id="tattoo-1">
+        <h2 class="hidden">gallery-section</h2>
         <div class="grid-con" id="app">
             <div class="col-span-full">
                 <div v-if="loadingTattoos">
@@ -90,6 +134,10 @@
                         :src="`http://127.0.0.1:8000/${tattoo.image_url}`" :alt="tattoo.id" class="tattoo-img">
                 </div>
             </div>
+        </div>
+
+        <div class="col-span-full">
+            <hr class="line-separator">
         </div>
     </section>
 

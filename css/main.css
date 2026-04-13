@@ -888,4 +888,85 @@ input[type=range]:focus::-moz-range-thumb {
   .studio-text {
     font-size: 16px;
   }
+}
+.portfolio-section {
+  background-color: #000000;
+}
+
+.portfolio-title {
+  color: #FFFFFF;
+  font-size: 64px;
+  font-family: "Bebas Neue", sans-serif;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.portfolio-image-box {
+  margin-bottom: 20px;
+}
+
+.portfolio-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-text {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.tattoo-gallery-section {
+  background-color: #000000;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto 40px auto;
+}
+
+.tattoo-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-title {
+    font-size: 48px;
+  }
+  .portfolio-text {
+    font-size: 16px;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 767px) {
+  .portfolio-title {
+    font-size: 36px;
+    margin-top: 50px;
+    text-align: left;
+  }
+  .portfolio-text {
+    font-size: 16px;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.loader {
+  width: 60px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

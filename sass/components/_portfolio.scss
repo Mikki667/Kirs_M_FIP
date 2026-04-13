@@ -1,0 +1,85 @@
+@use '../abstracts/variables' as *;
+
+.portfolio-section {
+    background-color: $background-color;
+}
+
+.portfolio-title {
+    color: $text-color;
+    font-size: 64px;
+    font-family: $font-heading;
+    margin-top: $space-lg;
+    margin-bottom: $space-md;
+}
+
+.portfolio-image-box {
+    margin-bottom: $space-md;
+}
+
+.portfolio-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.portfolio-text {
+    color: $text-color;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: $space-md;
+    font-family: $font-main;
+}
+
+.tattoo-gallery-section {
+    background-color: $background-color;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: $space-md;
+    max-width: 1000px;
+    margin: 0 auto $space-lg auto;
+}
+
+.tattoo-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+    .portfolio-title {
+        font-size: 48px;
+    }
+
+    .portfolio-text {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .portfolio-title {
+        font-size: 36px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    .portfolio-text {
+        font-size: 16px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: $space-md;
+    }
+  
+}
