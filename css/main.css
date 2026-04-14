@@ -15,6 +15,10 @@ section {
   margin-bottom: 0;
 }
 
+body {
+  color: #000000;
+}
+
 .main-header {
   background-color: #FF2D8F;
   padding: 20px 0;
